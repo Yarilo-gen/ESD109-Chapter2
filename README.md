@@ -1,2 +1,3 @@
 # ESD109-Chapter2
-Ce chapitre présente quelques lois discrètes.
+Ce chapitre est une introduction aux lois discrètes.
+
