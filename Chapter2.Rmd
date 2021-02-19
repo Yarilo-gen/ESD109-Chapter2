@@ -1,0 +1,13 @@
+---
+title: "Chapter 2: Discrete Random variables"
+output: html_notebook
+---
+
+# Binomial Distribution 
+
+* A binomial experiment consists of a fixed number of $n$ trials. 
+* Each trial has two possible outcomes: success, failure. 
+* The probability ofsuccess is denoted by $p$, $0\leq p \leq 1$;
+* The probability of failure is $1-p$. 
+* The trials are independent: the outcome of one trial does not affect the  outcome probability of any other trial. 
+
