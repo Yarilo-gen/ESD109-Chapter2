@@ -3,5 +3,5 @@
 
 # Lois de probabilités discrètes
 * Ce chapitre va vous initier aux lois dites discrètes.
-* Le contenu est basé sur un chapitre de [](KELLER, Gerald. Statistics for Management and Economics. Cengage Learning, 2015.)
+* Le contenu est basé sur le de [https://github.com/karkil2205/ESD109-Chapter2/blob/main/Kelle%209%20chapter%207.pdf](chapitre 7) de KELLER, Gerald. Statistics for Management and Economics. Cengage Learning, 2015. 
 
