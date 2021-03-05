@@ -68,3 +68,103 @@ mean((res-mean(res))^2)
 10*.2*.8
 ```
 
+
+
+
+## Exercice 7.84
+ 
+On a $n=10$ er $p=0.3$.
+
+a. Calculer $\Pr(X=3)$.
+```{r}
+round(dbinom(3,10,0.3),4)
+```
+
+b. Calculer $\Pr(X=5)$.
+
+```{r}
+round(dbinom(5,10,0.3),4)
+```
+
+
+c. Calculer $\Pr(X=8)$.
+
+```{r}
+round(dbinom(8,10,0.3),4)
+```
+
+## Obtenir les 3 résulats d'un coup.
+
+
+```{r}
+round(dbinom(c(3,5,8),10,0.3),4)
+```
+
+## Executer le Chunk en ligne de manière transparente
+
+a. Calculer $\Pr(X=3)$. On trouve $\Pr(X=3)=$ `r round(dbinom(3,10,0.3),4)`.
+
+## Exercice 7.92
+
+
+
+```{r}
+dbinom(1,4,1/4)
+dbinom(2,8,1/4)
+dbinom(3,12,1/4)
+
+```
+
+
+Taper un code en ligne. Un exemple simple `r 112+234`.
+
+
+
+## 7.101 b.
+
+$$E(X)=100\times \frac{244}{495}$$
+
+
+On trouve `r round(100*244/495,0)`. Il gagne environ en moyenne `r round(100*244/495,0)` parties pour 100 parties jouées.
+
+
+
+## Exercice 7.138
+
+
+Soit $X$ le nombre de faux-positifs pour 10 ans de mammographie. On a $X$ suit une loi $\mathcal{B}(10,p)$ où $p$ est inconnu. On sait que $\Pr(X\geq 1)=0.6$. On doit trouver $p$. 
+
+
+
+On a $$Pr(X \geq 1) = 1 - Pr(X=0)$$ Soit :
+
+$$
+1-(1-p)^{10}=0.60.
+$$
+Cela revient à résoudre l'équation suivante : 
+$$
+(1-p)^{10}=0.4,
+$$
+qui donne 
+$$
+1-p = 0.4^{1/10}
+$$.
+Ainsi, 
+$$p = 1 - 0.4^{1/10}
+$$
+Chaque année la probabilité qu'une femme qui passe une mamographie obtienne un faux positif s'élève à `r percent(1 - 0.4^(1/10),1)`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

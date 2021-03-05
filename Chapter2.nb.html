@@ -281,10 +281,110 @@ summary {
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="exercice-7.84" class="section level2">
+<h2>Exercice 7.84</h2>
+<p>On a <span class="math inline">\(n=10\)</span> er <span class="math inline">\(p=0.3\)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Calculer <span class="math inline">\(\Pr(X=3)\)</span>.</li>
+</ol>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm91bmQoZGJpbm9tKDMsMTAsMC4zKSw0KVxuYGBgIn0= -->
+<pre class="r"><code>round(dbinom(3,10,0.3),4)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMjY2OFxuIn0= -->
+<pre><code>[1] 0.2668</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Calculer <span class="math inline">\(\Pr(X=5)\)</span>.</li>
+</ol>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm91bmQoZGJpbm9tKDUsMTAsMC4zKSw0KVxuYGBgIn0= -->
+<pre class="r"><code>round(dbinom(5,10,0.3),4)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMTAyOVxuIn0= -->
+<pre><code>[1] 0.1029</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Calculer <span class="math inline">\(\Pr(X=8)\)</span>.</li>
+</ol>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm91bmQoZGJpbm9tKDgsMTAsMC4zKSw0KVxuYGBgIn0= -->
+<pre class="r"><code>round(dbinom(8,10,0.3),4)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="obtenir-les-3-résulats-dun-coup." class="section level2">
+<h2>Obtenir les 3 résulats d’un coup.</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm91bmQoZGJpbm9tKGMoMyw1LDgpLDEwLDAuMyksNClcbmBgYCJ9 -->
+<pre class="r"><code>round(dbinom(c(3,5,8),10,0.3),4)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="executer-le-chunk-en-ligne-de-manière-transparente" class="section level2">
+<h2>Executer le Chunk en ligne de manière transparente</h2>
+<ol style="list-style-type: lower-alpha">
+<li>Calculer <span class="math inline">\(\Pr(X=3)\)</span>. On trouve <span class="math inline">\(\Pr(X=3)=\)</span> 0.2668.</li>
+</ol>
+</div>
+<div id="exercice-7.92" class="section level2">
+<h2>Exercice 7.92</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGJpbm9tKDEsNCwxLzQpXG5gYGAifQ== -->
+<pre class="r"><code>dbinom(1,4,1/4)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuNDIxODc1XG4ifQ== -->
+<pre><code>[1] 0.421875</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGJpbm9tKDIsOCwxLzQpXG5gYGAifQ== -->
+<pre class="r"><code>dbinom(2,8,1/4)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMzExNDYyNFxuIn0= -->
+<pre><code>[1] 0.3114624</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGJpbm9tKDMsMTIsMS80KVxuYGBgIn0= -->
+<pre class="r"><code>dbinom(3,12,1/4)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMjU4MTAzNlxuIn0= -->
+<pre><code>[1] 0.2581036</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Taper un code en ligne. Un exemple simple 346.</p>
+</div>
+<div id="b." class="section level2">
+<h2>7.101 b.</h2>
+<p><span class="math display">\[E(X)=100\times \frac{244}{495}\]</span></p>
+<p>On trouve 49. Il gagne environ en moyenne 49 parties pour 100 parties jouées.</p>
+</div>
+<div id="exercice-7.138" class="section level2">
+<h2>Exercice 7.138</h2>
+<p>Soit <span class="math inline">\(X\)</span> le nombre de faux-positifs pour 10 ans de mammographie. On a <span class="math inline">\(X\)</span> suit une loi <span class="math inline">\(\mathcal{B}(10,p)\)</span> où <span class="math inline">\(p\)</span> est inconnu. On sait que <span class="math inline">\(\Pr(X\geq 1)=0.6\)</span>. On doit trouver <span class="math inline">\(p\)</span>.</p>
+<p>On a <span class="math display">\[Pr(X \geq 1) = 1 - Pr(X=0)\]</span> Soit :</p>
+<p><span class="math display">\[
+1-(1-p)^{10}=0.60.
+\]</span> Cela revient à résoudre l’équation suivante : <span class="math display">\[
+(1-p)^{10}=0.4,
+\]</span> qui donne <span class="math display">\[
+1-p = 0.4^{1/10}
+\]</span>. Ainsi, <span class="math display">\[p = 1 - 0.4^{1/10}
+\]</span> Chaque année la probabilité qu’une femme qui passe une mamographie obtienne un faux positif s’élève à 8.8%.</p>
 <!-- rnb-text-end -->
 </div>
+</div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ2hhcHRlciAyOiBEaXNjcmV0ZSByYW5kb20gdmFyaWFibGVzIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgoKIyBCaW5vbWlhbCBEaXN0cmlidXRpb24gCgoqIEEgYmlub21pYWwgZXhwZXJpbWVudCBjb25zaXN0cyBvZiBhIGZpeGVkIG51bWJlciBvZiAkbiQgdHJpYWxzLiAKKiBFYWNoIHRyaWFsIGhhcyB0d28gcG9zc2libGUgb3V0Y29tZXM6IHN1Y2Nlc3MsIGZhaWx1cmUuIAoqIFRoZSBwcm9iYWJpbGl0eSBvZiBzdWNjZXNzIGlzIGRlbm90ZWQgYnkgJHAsXDowXGxlcSBwXGxlcSAxJC4KKiBUaGUgcHJvYmFiaWxpdHkgb2YgZmFpbHVyZSBpcyAkMS1wJC4gCiogVGhlIHRyaWFscyBhcmUgYXNzdW1lZCBpbmRlcGVuZGVudDoKKiB0aGUgb3V0Y29tZSBvZiBvbmUgdHJpYWwgZG9lcyBub3QgYWZmZWN0IHRoZSAgb3V0Y29tZSBwcm9iYWJpbGl0eSBvZiBhbnkgb3RoZXIgdHJpYWwuCgoKYGBge3J9Cm49MTAgICMgU2FtcGxlIHNpemUKcD0uNSAjIHByb2JhYmlsaXR5IG9mIHN1Y2Nlc3MgCng9MDpuICAjIFBvc3NpYmxlIHZhbHVlcwpyb3VuZChkYmlub20oeCxuLHApLDQpCgpjaG9vc2UoMTAsNikKCjIxMCooMC41KV40KigwLjUpXjYKCi44XjEwCmRiaW5vbSgwLDEwLDAuMikKCjQ1KiguMileMiooLjgpXjgKY2hvb3NlKDEwLDIpKiguMileMiooLjgpXjgKZGJpbm9tKDIsMTAsLjIpCnN1bShkYmlub20oMDo0LDEwLC4yKSkKcGJpbm9tKDQsMTAsLjIpCmxpYnJhcnkoZm9ybWF0dGFibGUpCmRiaW5vbSgyLDEwLC4yKQpwZXJjZW50KGRiaW5vbSgyLDEwLC4yKSkKCgoKCgoKYGBgCgoKYGBge3J9CkI8LWFzLnRhYmxlKGRiaW5vbSgwOjEwLDEwLC4yKSkKQgpuYW1lcyhCKTwtMDoxMApCCnBsb3QoQixjb2w9InJlZCIsbWFpbj0iQmFyIHBsb3QgZm9yIGJpbm9taWFsIFBERiIseGxhYj0iTnVtYmVyIG9mIGNvcnJlY3QgYW5zd2VycyIseWxhYj0iUHJvYmFiaWxpdHkiKQpgYGAKYGBge3J9CnNldC5zZWVkKDEyMykKcmVzPC1yYmlub20oMTAwMDAsMTAsLjIpCmhlYWQocmVzLDEwKQptZWFuKHJlcykKcm91bmQoZGJpbm9tKDA6MTAsMTAsLjIpLDQpCnRhYmxlKHJlcykKc3VtKCgwOjEwKSpkYmlub20oMDoxMCwxMCwuMikpCigwOjEwKSUqJWRiaW5vbSgwOjEwLDEwLC4yKQoKdmFyKHJlcykKCm1lYW4oKHJlcy1tZWFuKHJlcykpXjIpCigwOjEwLTIpXjIlKiVkYmlub20oMDoxMCwxMCwuMikKMTAqLjIqLjgKYGBgCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ2hhcHRlciAyOiBEaXNjcmV0ZSByYW5kb20gdmFyaWFibGVzIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgoKIyBCaW5vbWlhbCBEaXN0cmlidXRpb24gCgoqIEEgYmlub21pYWwgZXhwZXJpbWVudCBjb25zaXN0cyBvZiBhIGZpeGVkIG51bWJlciBvZiAkbiQgdHJpYWxzLiAKKiBFYWNoIHRyaWFsIGhhcyB0d28gcG9zc2libGUgb3V0Y29tZXM6IHN1Y2Nlc3MsIGZhaWx1cmUuIAoqIFRoZSBwcm9iYWJpbGl0eSBvZiBzdWNjZXNzIGlzIGRlbm90ZWQgYnkgJHAsXDowXGxlcSBwXGxlcSAxJC4KKiBUaGUgcHJvYmFiaWxpdHkgb2YgZmFpbHVyZSBpcyAkMS1wJC4gCiogVGhlIHRyaWFscyBhcmUgYXNzdW1lZCBpbmRlcGVuZGVudDoKKiB0aGUgb3V0Y29tZSBvZiBvbmUgdHJpYWwgZG9lcyBub3QgYWZmZWN0IHRoZSAgb3V0Y29tZSBwcm9iYWJpbGl0eSBvZiBhbnkgb3RoZXIgdHJpYWwuCgoKYGBge3J9Cm49MTAgICMgU2FtcGxlIHNpemUKcD0uNSAjIHByb2JhYmlsaXR5IG9mIHN1Y2Nlc3MgCng9MDpuICAjIFBvc3NpYmxlIHZhbHVlcwpyb3VuZChkYmlub20oeCxuLHApLDQpCgpjaG9vc2UoMTAsNikKCjIxMCooMC41KV40KigwLjUpXjYKCi44XjEwCmRiaW5vbSgwLDEwLDAuMikKCjQ1KiguMileMiooLjgpXjgKY2hvb3NlKDEwLDIpKiguMileMiooLjgpXjgKZGJpbm9tKDIsMTAsLjIpCnN1bShkYmlub20oMDo0LDEwLC4yKSkKcGJpbm9tKDQsMTAsLjIpCmxpYnJhcnkoZm9ybWF0dGFibGUpCmRiaW5vbSgyLDEwLC4yKQpwZXJjZW50KGRiaW5vbSgyLDEwLC4yKSkKCgoKCgoKYGBgCgoKYGBge3J9CkI8LWFzLnRhYmxlKGRiaW5vbSgwOjEwLDEwLC4yKSkKQgpuYW1lcyhCKTwtMDoxMApCCnBsb3QoQixjb2w9InJlZCIsbWFpbj0iQmFyIHBsb3QgZm9yIGJpbm9taWFsIFBERiIseGxhYj0iTnVtYmVyIG9mIGNvcnJlY3QgYW5zd2VycyIseWxhYj0iUHJvYmFiaWxpdHkiKQpgYGAKYGBge3J9CnNldC5zZWVkKDEyMykKcmVzPC1yYmlub20oMTAwMDAsMTAsLjIpCmhlYWQocmVzLDEwKQptZWFuKHJlcykKcm91bmQoZGJpbm9tKDA6MTAsMTAsLjIpLDQpCnRhYmxlKHJlcykKc3VtKCgwOjEwKSpkYmlub20oMDoxMCwxMCwuMikpCigwOjEwKSUqJWRiaW5vbSgwOjEwLDEwLC4yKQoKdmFyKHJlcykKCm1lYW4oKHJlcy1tZWFuKHJlcykpXjIpCigwOjEwLTIpXjIlKiVkYmlub20oMDoxMCwxMCwuMikKMTAqLjIqLjgKYGBgCgoKCgojIyBFeGVyY2ljZSA3Ljg0CiAKT24gYSAkbj0xMCQgZXIgJHA9MC4zJC4KCmEuIENhbGN1bGVyICRcUHIoWD0zKSQuCmBgYHtyfQpyb3VuZChkYmlub20oMywxMCwwLjMpLDQpCmBgYAoKYi4gQ2FsY3VsZXIgJFxQcihYPTUpJC4KCmBgYHtyfQpyb3VuZChkYmlub20oNSwxMCwwLjMpLDQpCmBgYAoKCmMuIENhbGN1bGVyICRcUHIoWD04KSQuCgpgYGB7cn0Kcm91bmQoZGJpbm9tKDgsMTAsMC4zKSw0KQpgYGAKCiMjIE9idGVuaXIgbGVzIDMgcsOpc3VsYXRzIGQndW4gY291cC4KCgpgYGB7cn0Kcm91bmQoZGJpbm9tKGMoMyw1LDgpLDEwLDAuMyksNCkKYGBgCgojIyBFeGVjdXRlciBsZSBDaHVuayBlbiBsaWduZSBkZSBtYW5pw6hyZSB0cmFuc3BhcmVudGUKCmEuIENhbGN1bGVyICRcUHIoWD0zKSQuIE9uIHRyb3V2ZSAkXFByKFg9Myk9JCBgciByb3VuZChkYmlub20oMywxMCwwLjMpLDQpYC4KCiMjIEV4ZXJjaWNlIDcuOTIKCgoKYGBge3J9CmRiaW5vbSgxLDQsMS80KQpkYmlub20oMiw4LDEvNCkKZGJpbm9tKDMsMTIsMS80KQoKYGBgCgoKVGFwZXIgdW4gY29kZSBlbiBsaWduZS4gVW4gZXhlbXBsZSBzaW1wbGUgYHIgMTEyKzIzNGAuCgoKCiMjIDcuMTAxIGIuCgokJEUoWCk9MTAwXHRpbWVzIFxmcmFjezI0NH17NDk1fSQkCgoKT24gdHJvdXZlIGByIHJvdW5kKDEwMCoyNDQvNDk1LDApYC4gSWwgZ2FnbmUgZW52aXJvbiBlbiBtb3llbm5lIGByIHJvdW5kKDEwMCoyNDQvNDk1LDApYCBwYXJ0aWVzIHBvdXIgMTAwIHBhcnRpZXMgam91w6llcy4KCgoKIyMgRXhlcmNpY2UgNy4xMzgKCgpTb2l0ICRYJCBsZSBub21icmUgZGUgZmF1eC1wb3NpdGlmcyBwb3VyIDEwIGFucyBkZSBtYW1tb2dyYXBoaWUuIE9uIGEgJFgkIHN1aXQgdW5lIGxvaSAkXG1hdGhjYWx7Qn0oMTAscCkkIG/DuSAkcCQgZXN0IGluY29ubnUuIE9uIHNhaXQgcXVlICRcUHIoWFxnZXEgMSk9MC42JC4gT24gZG9pdCB0cm91dmVyICRwJC4gCgoKCk9uIGEgJCRQcihYIFxnZXEgMSkgPSAxIC0gUHIoWD0wKSQkIFNvaXQgOgoKJCQKMS0oMS1wKV57MTB9PTAuNjAuCiQkCkNlbGEgcmV2aWVudCDDoCByw6lzb3VkcmUgbCfDqXF1YXRpb24gc3VpdmFudGUgOiAKJCQKKDEtcCleezEwfT0wLjQsCiQkCnF1aSBkb25uZSAKJCQKMS1wID0gMC40XnsxLzEwfQokJC4KQWluc2ksIAokJHAgPSAxIC0gMC40XnsxLzEwfQokJApDaGFxdWUgYW5uw6llIGxhIHByb2JhYmlsaXTDqSBxdSd1bmUgZmVtbWUgcXVpIHBhc3NlIHVuZSBtYW1vZ3JhcGhpZSBvYnRpZW5uZSB1biBmYXV4IHBvc2l0aWYgcyfDqWzDqHZlIMOgIGByIHBlcmNlbnQoMSAtIDAuNF4oMS8xMCksMSlgLgoKCgoKCgoKCgoKCgoKCgo=</div>
 
 
 
